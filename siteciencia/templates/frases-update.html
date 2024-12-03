@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Frases - Update{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tarefas.css') }}">{% endblock %}
+{% block content %}
+<div id="geral">
+  <h1>Frase - Atualização</h1>
+  <section>
+    <form class="form-inline" action="{{ url_for('frasesUpdate', id=frase.id) }}" method="POST">
+      <div class="form-group">
+        <label for="description">Frase</label>
+        <input value="{{ frase.frase }}" type="text" class="form-control" name="frase" id="frase">
+        
+        <label for="autor">Autor</label>
+        <input value="{{ frase.autor }}" type="text" class="form-control" name="autor" id="autor">
+        
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+        <p><a href="{{ url_for('frasesAdm') }}">Cancelar</a></p>
+      </div>
+    </form>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+#frase {
+  width: 80%;
+  margin: 0 auto 50px;
+  color: darkblue;
+  font-size: 35px;
+  font-style: italic;
+  padding: 30px 20px;
+  background-color: #fff;
+  box-shadow: inset 3px 3px 8px 3px #0005;
+}
+
+#frase span {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: bold;
+  color: darkred;
+}
+
+#frase em {
+  font-size: 20px;
+  color: darkcyan;
+}

@@ -1,0 +1,132 @@
+#geral h1 {
+  font-family: Trench;
+  font-size: 70px;
+  color: var(--realce);
+  text-shadow: 0 0 20px blue;
+}
+
+#geral h2 {
+  font-family: Trench;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+#geral section {
+  margin-top: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 25px;
+  margin: 30px auto 70px;
+  position: relative;
+}
+
+tr {
+  background-color: var(--realce);
+  color: black;
+}
+
+tr:nth-child(2n) {
+  background-color: white;
+}
+
+th {
+  padding: 10px;
+  color: var(--realce);
+  background-color: #003;
+  font-weight: bold;
+}
+
+td {
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: 500;
+}
+
+th:first-child {
+  width: 50%;
+}
+
+td:nth-child(2) {
+  text-align: center;
+}
+
+td:last-child{
+  text-align: center;
+}
+
+thead > tr > th {
+  position: sticky;
+  top: 0px;
+}
+
+td a, form a {
+  display: inline-block;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+td a:last-child, form a:last-child  {
+  background-color: darkred;
+}
+
+td a:hover, form a:hover, button:hover {
+  border-color: yellow;
+  color: yellow;
+}
+
+form {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto 70px;
+  padding: 0 20px 20px;
+  border: 1px solid var(--realce);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px #00a1ff99;
+  text-align: center;
+  background-color: #0007;
+}
+
+label {
+  display: block;
+  margin: 20px 0 10px;
+  color: white;
+  font-size: 20px;
+}
+
+input, textarea {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid var(--realce);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px #00a1ff99;
+  color: darkblue;
+  font-size: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 25px;
+  background-color: green;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+form p {
+  margin: 20px;
+}

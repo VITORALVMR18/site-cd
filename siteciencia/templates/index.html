@@ -1,0 +1,219 @@
+{% extends "base.html" %}
+{% block title %}Curso Técnico Ciência de Dados{% endblock %}
+{% block head %}<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">{% endblock %}
+{% block content %}
+      <div id="back">
+        <h1>Ciência de Dados</h1>
+        <h2>Escola Estadual Dr. Ângelo Mendes de Almeida SP<index/h2>
+        <h2>Turma 2°b 2024</h2>
+        <h3>Prof. Parisotto</h3>
+      </div>
+
+      <main id="home">
+        <img id="logo" src="{{ url_for('static', filename='img/logo-cd.png') }}" alt="Logo Ciência de dados">
+        <section id="apresentacao">
+      
+          <h1>Esta site foi Desenvolvido com<br>o micro-framework FLASK e Python</h1>
+          <div class="container">
+            <article class="card">
+      
+      <!-- Simulação de código Flask -->
+      <pre><code class="python"><span class="app">@app.route</span>(<span class="app-param">'/projeto'</span>)<span class="app-def">
+      def</span> <span class="app-func">site_cd</span>():<span class="app-return">
+      return</span> <span class="app-txt">"Projeto em Flask"</span></code></pre>
+      <!-- Fim da simulação de código Flask -->
+              <p><img src="{{ url_for('static', filename='img/logo-flask-branco.png') }}" alt="" width="50px">O <strong>Flask</strong> é um micro-framework que utiliza a linguagem <strong>Python</strong> para desenvolver aplicações web, sites interativos e APIs de forma rápida e eficiente, com a possibilidade de adicionar funcionalidades gradualmente, como suporte a banco de dados, autenticação, templates entre outras coisas mais.</p>
+              <p>Empresas como Zillow, Patreon, Reddit, Trivago, Pinterest e várias outras usam <strong>Flask</strong> em seus sites. Além disso, diversas empresas de ponta usam <strong>Flask</strong> em sua pilha, como Samsung, Netflix, Uber, Airbnb e outras.</p>
+            </article>
+            <article class="card">
+      
+      <!-- Simulação de código Flask -->
+      <pre><code class="python"><span class="app">@app.route</span>(<span class="app-param">'/estudar'</span>)
+      <span class="app-def">def</span> <span class="app-func">ciencia_de_dados</span>():
+      <span class="app-return">return</span> <span class="app-txt">"Aprendendo com Python"</span></code></pre>
+      <!-- Fim da simulação de código Flask -->
+              <p><img src="{{ url_for('static', filename='img/logo-python.png') }}" alt="" width="50px">Neste curso, os alunos do <strong>Curso Técnico em Ciência de Dados</strong> da <strong>E.E. Dr Ângelo Mendes de Almeida</strong> aprenderam a criar este site, suas múltiplas páginas, a integração com um banco de dados e formulários de cadastro, login e contato usando o <strong>Flask</strong> em seu desenvolvimento e o consumo de APIs em <strong>Python</strong> no back-end.</p>
+              <p>Todo o projeto foi desenvolvido em sala de aula após um ano praticando pequenos códigos em <strong>Python</strong> com a intensa participação dos alunos que efetuaram constantes atualizações em seus respectivos repositórios no <strong>GitHub</strong>.</p>
+            </article>
+          </div>
+      
+          <div class="mascote">
+            <img class="Pypet" src="{{ url_for('static', filename='img/piton.png') }}" alt="Mascote Pypet" width="150px">
+            <div class="balao">
+              <p>Olá, ferinha!<br>Meu nome é PyPet.<br>Sou o mascote do curso de Ciência de Dados!</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div id="conteudo-secundario">
+        <h1 class="intervalo">A Era da Ciência de Dados</h1>
+      
+        <section id="caixas">
+          <article  id="analise">
+            <h1>Análise de Dados</h1>
+            <div>
+              <p>O profissional capaz de <strong>analisar dados</strong> da maneira adequada poderá tomar decisões estratégicas de forma mais assertiva. E é por isso que as organizações estão buscando cada vez mais por esses profissionais.</p>
+            </div>
+            <a href="{{ url_for('analise') }}">Saiba mais</a>
+          </article>
+          <article  id="estatistica">
+            <h1>Estatística</h1>
+            <div>
+              <p>O conhecimento sobre <strong>estatística</strong> é fundamental para a eficiente aplicação dos recursos oferecidos pelas linguagens voltadas para a análise de dados e para a construção de painéis gerenciais.</p>
+            </div>
+            <a href="{{ url_for('estatistica') }}">Saiba mais</a>
+          </article>
+          <article  id="programacao">
+            <h1>Programação Python</h1>
+            <div>
+              <p>É importante que profissionais de todas as áreas tenham a habilidade de analisar os dados e utilizá-los de uma maneira estratégica no suporte à tomada de decisões com auxílio de aplicativos desenvolvidos com a linguagem <strong>Python</strong>.</p>
+            </div>
+            <a href="{{ url_for('programacao') }}">Saiba mais</a>
+          </article>
+        </section><!-- CAIXAS -->
+        <h1 class="intervalo compo">Componentes do 1° ano do curso</h1>
+        <section id="componentes">
+          <article id="introducao">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Introdução à Ciência de<br> Dados, Ferramentas e<br>Jargões da Área</h3>
+            </div>
+            <div class="conteudo">
+              <p>História e Evolução da Ciência de Dados; O Papel da Ciência de Dados na Tomada de Deci
+                são; A Importância da Interdisciplinaridade na Ciência de Dados; Jargões e Inglês da Ciência
+                de Dados; Introdução à Informática; Introdução a Jupyter Notebook e Configuração de Am
+                biente; Utilização de Bibliotecas de Ciência de Dados em Python e Controle de Versão com
+                Git e GitHub.</p>
+            </div>
+          </article>
+          <article id="logica">
+            <div class="icone"><img src="<div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Lógica, Algoritmo e<br>Operação de Planilhas<br>Eletrônicas</h3>
+            </div>
+            <div class="conteudo">
+              <p> Lógica de Programação e Algoritmos; Planilhas Eletrônicas; Visualização de Dados e Projeto
+                de Lógica</p>
+            </div>
+          </article>
+          <article id="programacao">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Programação aplicada<br>à Ciência de Dados</h3>
+            </div>
+            <div class="conteudo">
+              <p>Introdução à Linguagem Python; Variáveis e Tipos de Dados; Estrutura de Controle de Fluxo;
+                Manipulação de Arquivos e Bibliotecas: Pandas, NumPy, SciPy, Matplotlib e Seaborn.</p>
+            </div>
+          </article>
+          <article id="banco">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Banco de Dados<br>e Computação em<br>Nuvem</h3>
+            </div>
+            <div class="conteudo">
+              <p>Conceitos de Banco de Dados; Introdução à Linguagem SQL; Bancos de Dados Relacionais
+                e Não Relacionais; Serviços de Computação em Nuvem (ex.: AWS, Google Cloud, Azure); Uti
+                lização de Serviços de Armazenamento e Processamento em Nuvem e Desenvolvimento de
+                Aplicações em Nuvem com Python.</p>
+            </div>
+          </article>
+          <article id="carreira">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Carreira e Competências<br>para o Mercado de Trabalho<br>em Ciência de Dados</p>
+            </div>
+            <div class="conteudo">
+              <p>Características e Tendências do Mundo do Trabalho Atual; Setores e Segmentos de Atuação
+                Profissional na Área de Administração; Planejamento de Carreira e Preparação Profissional;
+                Autoconhecimento e Orientação Profissional: Identificação de Habilidades, Interesses e Va
+                lores Pessoais; Preparação para Oportunidades de Trabalho; Finanças Pessoais: Uso Cons
+                ciente e Eficiente dos Recursos Financeiros; Iniciação Empreendedora: Etapas Iniciais do
+                Processo Empreendedor e Elaboração de um Plano de Negócios Simplificado.
+                </p>
+            </div>
+          </article>
+          <article id="etica">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Ética e Responsabilidade<br>em Inteligência Artificial</h3>
+            </div>
+            <div class="conteudo">
+              <p>Ética Profissional e na Inteligência Artificial; Privacidade e Lei Geral de Proteção de Dados;
+                Futuro da Inteligência Artificial; Ferramentas de Projeto; Metodologia Ágil e Comunicação e
+                Apresentação de Projeto.
+                </p>
+            </div>
+          </article>
+        </section>
+        <h1 class="intervalo compo">Componentes do 2° ano do curso</h1>
+        <section id="componentes">
+          <article id="aprendizagem">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Aprendizagem de Máquina</h3>
+            </div>
+            <div class="conteudo">
+              <p>Fundamentos de Aprendizado de Máquina; Modelos, Algoritmos e Estimadores; Preparação
+                de Dados e Otimização de Modelos e Projeto de Aprendizagem de Máquina.
+                </p>
+            </div>
+          </article>
+          <article id="matematica">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Matemática e Estatística<br>para Ciência de Dados</h3>
+            </div>
+            <div class="conteudo">
+              <p>Álgebra Linear, Equações, Sistemas de Equações, Funções, Cálculo, Estatística Descritiva,
+                Métodos de Amostragem, Probabilidade e Distribuições de Probabilidade; Testes de Hipó
+                teses, Inferência Estatística.
+                </p>
+            </div>
+          </article>
+          <article id="analise">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Análise Exploratória de<br>Dados e Inteligência de<br>Negócio</h3>
+            </div>
+            <div class="conteudo">
+              <p>Análise Exploratória de Dados; Storytelling de Dados e Software de Análise de Dados
+                (PowerBI)</p>
+            </div>
+          </article>
+          <article id="inteligencia">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Inteligência Artificial</h3>
+            </div>
+            <div class="conteudo">
+              <p>Redes Neurais; Processamento de Linguagem Natural, Inteligência Artificial Generativa e
+                Projeto de Inteligência Artificial.</p>
+            </div>
+          </article>
+          <article id="multidisciplinar">
+            <div class="icone"><img src="{{ url_for('static', filename='img/logo-cd.png') }}" alt=""></div>
+            <div class="titulo">
+              <h3>Projeto Multidisciplinar</h3>
+            </div>
+            <div class="conteudo">
+              <p>Introdução ao Projeto Multidisciplinar: Etapas do Processo de um Projeto Multidisciplinar;
+                Definição do Projeto e Início das Pesquisas; Planejamento e Organização: Elaboração do
+                Plano de Trabalho; Desenvolvimento e Acompanhamento do Projeto com Uso de Ferramen
+                tas de Gestão de Projetos; Preparação da Apresentação e Discurso do Projeto; Apresentação
+                do Projeto</p>
+            </div>
+          </article>
+        </section>
+        <section id="sobre">
+          <h1>Curso Técnico em Ciência de Dados</h1>
+          <div id="msg">
+            <p>Esta é uma área nova, mas que tem crescido rapidamente. E ela traz uma perspectiva de altos salários! O técnico em <strong>Ciência de Dados</strong> poderá atuar em empresas de segmentos como saúde, bancos, comércios e outros usando dados para entender as necessidades dos clientes, melhorar a eficiência das operações, traçar tendências e desenvolver soluções mais eficazes. O aluno vai aprender a programar em <strong>Python</strong> e terá muito conteúdo sobre aprendizagem de máquina e <strong>inteligência artificial</strong>.</p>
+            <p><span>Carga horária: 1.200 horas</span></p>
+          </div>
+          <div id="video">
+            <iframe src="https://www.youtube.com/embed/Ns0op13uxhI?si=WsUXXZfLXLDZDkbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </section>
+      </div><!-- class='conteudo-secundario' -->
+      {% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Tabela{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tarefas.css') }}">
+{% endblock %}
+{% block content %}
+<div id="geral">
+  <h1>Tabela Tarefas</h1>
+  <section>
+    {% if tasks|length < 1 %}
+      <h2>Nenhuma tarefa registada. Crie uma tarefa.</h2>
+    {% else %}
+      <table class="tabela">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Criado em</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for task in tasks %}
+            <tr>
+              <td>{{ task.description }}</td>
+              <td>{{ task.date_created.date() }}</td>
+              <td>
+                <a href="{{ url_for('tarefasUpdate', id=task.id) }}" class="update">Atualizar</a>
+                <a href="{{ url_for('tarefasDelete', id=task.id) }}" class="delete">Eliminar</a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <h2>Crie uma nova tarefa.</h2>
+    {% endif %}
+    <form class="form-inline" action="{{ url_for('tarefas') }}" method="POST">
+      <div class="form-group">
+        <label for="description">Tarefa</label>
+        <input type="text" class="form-control" name="description" id="description">
+        <button type="submit" class="btn btn-primary">Adicionar</button>
+      </div>
+    </form>
+  </section>
+</div>
+{% endblock %}

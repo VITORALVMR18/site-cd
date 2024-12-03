@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Tabela{% endblock %}
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tarefas.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/frases.css') }}">{% endblock %}
+{% block content %}
+<div id="geral">
+  <h1>Frases</h1>
+  <section>
+{% if (nome) %}    
+    <div>
+  {% if frase %}
+      <p id="frase"><span>{{ nome | capitalize }}:</span>"{{ frase.frase }} <em>{{ frase.autor }}"</em></p>
+  {% else %}
+      <p id="frase"><span>{{ nome | capitalize }}:</span>"Não sabendo que era impossível, ele foi lá e fez. <em>Jean Cocteau</em>"</p>
+  {% endif %}
+    </div>
+    <button onclick="window.location.href='{{ url_for('frasesAdm') }}'">Administrar Frases</button>
+{% else %}
+    <form class="form-inline" action="{{ url_for('frases') }}" method="GET">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" name="nome" id="nome">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </div>
+    </form>
+{% endif %}
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/piton.png') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+
+  <title>{% block title %}{% endblock %}</title>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <div id="wrapper">
+    <header id="menu-principal">
+      <nav>
+        <div class="logo"> <a href="/"><img src="{{ url_for('static', filename='img/logo-python.png') }}" alt="Logo do Site"></a> </div>
+        <ul>
+          <li><a href="{{ url_for('galeria') }}">Galeria</a></li> 
+          <li><a href="{{ url_for('tarefas') }}">Tarefas</a></li> 
+          <li><a href="{{ url_for('frases') }}">Frases</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="conteudo-principal">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://parisotto.net" target="_blank">
+      <img src="https://www.parisotto.net/img/logo-pnet.png" alt="Parisotto.Net" title="Parisotto.Net">
+    </a>
+    <p>Copyright &copy; 1962-2025 - <a href="https://parisotto.net" target="_blank">Parisotto.Net Internet</a></p>
+    <p>Website Design by <strong>Edson Parisotto</strong></p>
+  </footer>
+
+  <script>
+    window.onscroll = function () { 
+      var header = document.getElementById("menu-principal"); 
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          header.classList.add("header-small"); 
+        } else { 
+          header.classList.remove("header-small"); 
+        } 
+      };
+  </script>
+</body>
+</html>

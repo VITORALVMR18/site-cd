@@ -1,0 +1,377 @@
+#wrapper {
+  background-color: #000c;
+}
+
+#back {
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* background-color: #000c; */
+  height: 100vh;
+  font-family: Trench;
+}
+
+#back h1 {
+  font-size: 120px;
+  margin: 50px 0;
+  color: var(--realce);
+  text-shadow: 0px 0px 20px blue;
+}
+
+#back h2 {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: normal;
+}
+
+#back h3 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+#home {
+  position: relative;
+  z-index: 5;
+  margin: 500px auto 100px;
+  border: 10px solid var(--realce);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px 5px var(--realce);
+  width: 96%;
+  background-color: #000;
+  color: white;
+}
+
+#home #logo {
+  margin-top: -90px;
+  padding: 10px;
+  width: 180px;
+  border-radius: 50%;
+  background-color: black;
+  border: 5px solid var(--realce);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 25px 5px var(--realce);
+}
+
+#home section h1 {
+  font-family: "Trench";
+  font-size: 50px;
+  color: var(--realce);
+  margin: 70px 0 40px;
+  display: inline-block;
+}
+
+#apresentacao #msg {
+  text-align: justify;
+  margin:0 50px;
+}
+
+#msg p {
+  margin: 25px 0;
+  text-align: justify;
+  line-height: 170%;
+  font-size: 20px;
+}
+
+#msg strong {
+  color: var(--realce);
+}
+
+#msg span {
+  color: orange
+}
+
+#conteudo-secundario {
+  position: relative;
+  background-color: #000c;
+  border-radius: 20px;
+  z-index: 5;
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-basis: 1;
+}
+
+.card {
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px 15px 0;
+}
+
+.card p {
+  margin: 25px 0;
+  text-align: justify;
+  line-height: 170%;
+}
+
+
+.card img {
+  float: left;
+  margin-right: 20px;
+  vertical-align: top;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.card strong {
+  color: var(--realce);
+}
+
+.Pypet {
+
+  text-align: right;
+  cursor: pointer;
+}
+
+#home section {
+  position: relative;
+}
+
+.mascote {
+  position: absolute;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  left: 43%;
+  display: inline-block;
+}
+
+.balao {
+  color: black;
+  padding: 15px;
+  min-width: 250px;
+  min-height: 80px;
+  background-color: white;
+  position: absolute;
+  bottom: 150px;
+  left: 48%;
+  text-align: center;
+  border-radius: 20px;
+  font-family: "Hey Comic";
+  font-weight: normal;
+  font-size: 20px;
+  box-shadow: 0 0 15px 3px var(--realce);
+  display: none;
+}
+
+.mascote:hover > .balao {
+  display: block;
+}
+
+.app {
+  color: rgb(103, 216, 103);
+}
+
+.app-param {
+  color: rgb(228, 228, 104);
+}
+
+.app-def {
+  color: rgb(36, 160, 160);
+}
+
+.app-func {
+  color: orange;
+}
+
+.app-return {
+  color: chocolate
+}
+
+.app-txt {
+  color: darkgreen;
+}
+
+/* SECTION CAIXAS*/
+.intervalo, .compo {
+  font-family: "Trench";
+  font-size: 50px;
+  color: var(--realce);
+  padding: 50px 0 70px;
+  display: inline-block;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background-image: url("../img/codigo-python.jpg");
+}
+
+.intervalo {
+  margin-top: -30px;
+  background-color: #000;
+}
+
+#caixas {
+  display: flex;
+  align-items:stretch;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  width: 100%;
+
+  position: relative;
+  z-index: 3;
+  margin-top: -30px;
+}
+
+#caixas article {
+  min-height: 550px;
+  flex-basis: 100%;
+  margin: 0 20px;
+  padding-bottom: 10px;
+  background-color: #000c;
+  border: 1px solid var(--realce);
+  box-shadow: 0 0 15px 5px #00a1ff99;
+  border-radius: 10px;
+  position: relative;
+  background-position: top center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#caixas #analise {
+  background-image: url("../img/bg-analise.png");
+}
+
+#caixas #estatistica {
+  background-image: url("../img/estatistica.png");
+}
+
+#caixas #programacao {
+  background-image: url("../img/programacao.png");
+}
+
+#caixas h1 {
+  color: var(--realce);
+  background-color: #000d;
+  padding: 15px 25px 15px 20px;
+  position: absolute;
+  top:212px;
+  border-radius: 0 2cap 0 0;
+  font-family: "Trench";
+  font-size: 30px;
+}
+
+#caixas div {
+  position: absolute;
+  padding: 20px;
+  top: 250px;
+}
+
+
+#caixas p {
+  color: white;
+  line-height: 150%;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+#caixas a {
+  color: black;
+  display: inline-block;
+  background-color: var(--realce);
+  padding: 15px 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  font-family: "Trench";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#caixas a:hover {
+  box-shadow: 0 0 10px 3px var(--realce);
+  border-bottom: 3px solid cyan;
+  border-right: 3px solid cyan;
+  color: darkblue;
+}
+
+#caixas span {
+  color: var(--realce);
+}
+
+.compo {
+  margin-top: 40px;
+}
+
+#componentes {
+  color: white;
+  margin: -30px 20px 0;
+}
+
+#componentes article {
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px var(--realce);
+  margin: 0  0 30px 50px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+}
+
+#componentes .icone {
+  flex: 0 0 90px;
+  background-color: black;
+  border-radius: 7.5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px var(--realce);
+
+  margin: 0 20px 0 -75px;
+}
+
+#componentes .titulo {
+  flex: 0 0 400px;
+  margin-right: 30px;
+  font-size: 23px;
+  color: var(--realce);
+}
+
+#componentes .conteudo {
+  flex: 1;
+}
+
+#sobre {
+  border: 1px solid var(--realce);
+  border-radius: 10px;
+  color: white;
+  padding: 50px;
+  margin: 50px 20px;
+  box-shadow: 0 0 10px 4px #00a1ff99;
+  background-color: #0007;
+}
+
+#sobre h1 {
+  text-align: center;
+  font-family: "Trench";
+  font-size: 50px;
+  color: var(--realce);
+}
+
+#sobre #video {
+  margin-top: 70px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  border: 1px solid #00a1ff99;
+  box-shadow: 0 0 15px 5px #00a1ff99;
+}
+
+#sobre #video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
